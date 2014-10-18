@@ -1,1 +1,27 @@
-"My GitHub Page" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form name="tellafriend" action="tellafriend.php" method="post" onsubmit="return check_entryform(tellafriend);" target="_blank">
+<table class="table table-responsive" width="" align="center" style=" border:none; margin: 3px; padding: 3px;">
+
+<tr style="border:hidden"><td width="50%" align=""><h5>Senders Name:</h5></td><td align=""><input class="form-control" size="50" name="usersname"></td></tr>
+<tr style="border:hidden"><td align=""><h5>Senders E-mail Address:</h5></td><td align=""><input class="form-control" size="50" name="usersemail"></td></tr>
+<tr style="border:hidden"><td align=""><h5>Receivers Name:</h5></td><td align=""><input class="form-control" size="50" name="friendsname"></td></tr>
+<tr style="border:hidden"><td align=""><h5>Receivers E-mail Address:</h5></td><td align=""><input class="form-control" size="50" name="friendsemail">
+<input type="hidden" id="name" name="privatekey">
+<script type="text/javascript">
+  var a = document.getElementById("name");
+  var b = document.location.href;
+  a.value = b;
+</script></td></tr>
+<tr><td align="">&nbsp;</td><td align="middle"><input class="btn btn-primary" value="Send" name="submit" type="submit"   /></td></tr>
+
+</table>
+</form>
+</body>
+</html>
